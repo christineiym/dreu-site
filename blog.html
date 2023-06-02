@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="posts">
+  {% for post in site.posts %}
+  <a href="{{ site.baseurl }}{{ post.url }}">
+    <article class="post-entry">
+      <header class="entry-header">
+        <h1>{{ post.title }}</h1>
+      </header>
+
+      <div class="entry-description">
+        {{ post.description }}
+        <!-- {{ post.excerpt }} -->
+      </div>
+    </article>
+  </a>
+  {% endfor %}
+</div>
